@@ -1,0 +1,13 @@
+<!--start.wxml-->
+
+<button class="btn1" bindtap="getDataFromOneNet" >
+检查数据(OneNet)</button>
+
+<view class="view-group" style="display: flex;flex-direction: column-reverse;">   
+    <view class="{{upChecked?'upwake':'up'}}">可以拜访</view>
+    <view class="{{sleepChecked?'sleepwake':'sleep'}}">在休息</view>
+    <view class="{{lightChecked?'lightwake':'light'}}">未断电</view>
+    <view class="{{downChecked?'downwake':'down'}}">不可拜访</view>  
+</view>
+
+<button class="btn2" bindtap="clearColor">清除数据</button>
